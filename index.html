@@ -1,0 +1,1188 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+    <title>Style Guide Template</title>
+
+    <link href="assets/css/main.css" rel="stylesheet">
+     <!--=============== FAVICON ===============-->
+     <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+     <!--=============== REMIXICONS ===============-->
+     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+     
+     <!--=============== SWIPER CSS ===============-->
+     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+
+  </head>
+
+  <body>
+
+    <header class="header" id="header">
+        <h1>
+            Style Guide of Miji's Portfolio
+        </h1>
+      <nav class="nav">
+          <a href="#" class="nav__logo">
+              Miji
+          </a>
+
+          <div class="nav__menu">
+              <ul class="nav__list grid">
+                  <li class="nav__item">
+                      <a href="#home" class="nav__link active-link">
+                          <i class="ri-home-5-line"></i> Home
+                      </a>
+                  </li>
+
+                  <li class="nav__item">
+                      <a href="#skills" class="nav__link">
+                          <i class="ri-trophy-line"></i> Skills
+                      </a>
+                  </li>
+
+                  <li class="nav__item">
+                      <a href="#qualification" class="nav__link">
+                          <i class="ri-book-open-line"></i> Qualification
+                      </a>
+                  </li>
+
+                  <li class="nav__item">
+                      <a href="#projects" class="nav__link">
+                          <i class="ri-image-line"></i> Projects
+                      </a>
+                  </li>
+
+                  <li class="nav__item">
+                      <a href="#contact" class="nav__link">
+                          <i class="ri-chat-3-line"></i> Contact
+                      </a>
+                  </li>
+              </ul>
+
+              <!-- Close button -->
+              <div class="nav__close">
+                  <i class="ri-close-line"></i>
+              </div>
+          </div>
+
+          <div class="nav__buttons">
+              <!-- Theme change button -->
+              <i class="ri-moon-line change-theme"></i>
+
+              <!-- Toggle button -->
+              <div class="nav__toggle">
+                  <i class="ri-menu-4-line"></i>
+              </div>
+          </div>
+      </nav>
+  </header>
+
+
+
+    <!-- INTERACTIVE ELEMENTS SECTION // -->
+    <section id="interactive_elements">
+      <h2>Interactive Elements</h2>
+
+
+      <section class="element">
+        <h3>In-text link</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.nav__link</p>
+
+        <h4>Sample code:</h4>
+        <code>
+            &lt;a href="#home" class="nav__link"&gt;
+            &lt;i class="ri-home-5-line">&lt;/i&gt; Home
+                &lt;/a&gt;
+        </code>
+
+        <h4>Rendered element:</h4>
+
+
+        <a href="#home" class="nav__link">
+            <i class="ri-home-5-line"></i> Home
+        </a>
+
+        
+      </section>
+
+      <!-- Default Button styling section -->
+      <section class="element">
+
+        <h3>Navigation Link</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.button-nav</p>
+
+        <h4>Sample code:</h4>
+        <code>        
+            &lt;a href="https://drive.google.com/drive/u/0/folders/1HiOxrfiWZSnz7Uhui4wfj7Bo7Zz8NDt2" target="_blank" class="resume__social-link2"&gt;<br>
+                Download Resume<br>
+                &lt;i class="ri-attachment-2"&gt;<br>
+                &lt;/i&gt;                        <br>    
+                &lt;/a&gt;<br>
+        </code>
+
+        <h4>Rendered element:</h4>
+
+        <a href="https://drive.google.com/drive/u/0/folders/1HiOxrfiWZSnz7Uhui4wfj7Bo7Zz8NDt2" target="_blank" class="resume__social-link2">
+            Download Resume <i class="ri-attachment-2"></i>                            
+        </a>
+
+      </section>
+
+
+      <section class="element">
+        <h3>Submit/Reset Buttons</h3>
+        <h4>CSS selector:</h4>
+        <p>.button-nav</p>
+
+        <h4>Sample code:</h4>
+        <code>
+
+            &lt;button type="submit" class="submit__button2"&gt;<br>
+                Submit &lt;i class="ri-arrow-right-up-line"&gt;<br>
+                &lt;/i&gt;<br>
+                &lt;/button&gt;<br>
+        
+        </code>
+
+        <h4>Rendered element:</h4>
+
+
+        <button type="submit" class="submit__button2">
+            Submit <i class="ri-arrow-right-up-line"></i>
+        </button>
+
+
+      </section>
+
+
+      <section class="element">
+        <h3>Text Input Field with Label</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.nav__menu</p>
+
+        <h4>Sample code:</h4>
+        <code>
+        
+            &lt;div class="contact__form-div2"&gt;<br>
+            &lt;label class="contact__form-tag"&gt;<br>Names&lt;/label&gt;<br>
+            &lt;input type="text" name="user_name" required placeholder="Write your names" class="contact__form-input"&gt;<br>
+            &lt;/div&gt;<br>
+        
+        </code>
+
+        <h4>Rendered element:</h4>
+
+        <div class="contact__form-div2">
+            <label class="contact__form-tag">Names</label>
+            <input type="text" name="user_name" required placeholder="Write your names" class="contact__form-input">
+        </div>
+
+      </section>
+
+    </section>
+    <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+
+
+    <!-- TEXT ELEMENTS SECTION // -->
+    <section id="text_elements">
+      <h2>Text Elements</h2>
+
+      <section class="element">
+        <h3>Headings</h3><br>
+                
+        <h4>Headings H4</h4>
+        <h3>Headings H3</h3>
+        <h2>Headings H2</h2>
+      </section>
+
+      <section class="element">
+        <h3>Paragraphs</h3>
+        <p>
+            Paragraphs. This is writing!
+        </p>
+      </section>
+
+
+    </section>
+    <!-- // TEXT ELEMENTS SECTION -->
+
+    
+    <!-- COMBINED ELEMENTS SECTION // -->
+    <section id="combined_elements">
+      <h2>Combined Elements</h2>
+
+      <section class="element">
+        <h3>Main Navigation</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.button-nav</p>
+
+        <h4>Sample code:</h4>
+        <code>
+            
+            &lt;a href="#" class="button"&gt;Default Button&lt;/a&gt;<br>
+        
+            &lt;nav class="nav container"&gt;<br>
+            &lt;a href="#" class="nav__logo"&gt;<br>
+            &lt;img src="assets/img/logo.png" alt="logo" /&gt;<br>
+            &lt;/a&gt;<br>
+    
+            &lt;div class="nav__menu" id="nav-menu"&gt;<br>
+            &lt;ul class="nav__list grid"&gt;<br>
+            &lt;i class="nav__item"&gt;<br>
+            &lt;a href="#home" class="nav__link active-link"&gt;<br>
+            &lt;i class="ri-home-5-line">&lt;/i&gt;<br> Home
+            &lt;/a&gt;<br>
+            &lt;/li&gt;<br>
+    
+            &lt;li class="nav__item"&gt;<br>
+            &lt;a href="#skills" class="nav__link"&gt;<br>
+            &lt;i class="ri-trophy-line"&gt;<br>&lt;/i&gt;<br> Skills
+            &lt;/a&gt;<br>
+            &lt;/li&gt;<br>
+            &lt;/ul&gt;<br>
+            &lt;/div&gt;<br>
+            &lt;/nav&gt;<br>
+        
+        </code>
+
+        <h4>Rendered element:</h4>
+
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <img src="assets/img/logo.png" alt="logo" />
+            </a>
+
+          <div class="nav__menu" id="nav-menu">
+              <ul class="nav__list grid">
+                  <li class="nav__item">
+                      <a href="#home" class="nav__link active-link">
+                          <i class="ri-home-5-line"></i> Home
+                      </a>
+                  </li>
+
+                  <li class="nav__item">
+                      <a href="#skills" class="nav__link">
+                          <i class="ri-trophy-line"></i> Skills
+                      </a>
+                  </li>
+
+                  <li class="nav__item">
+                      <a href="#qualification" class="nav__link">
+                          <i class="ri-book-open-line"></i> Qualification
+                      </a>
+                  </li>
+<!--
+                  <li class="nav__item">
+                      <a href="#services" class="nav__link">
+                          <i class="ri-briefcase-line"></i> Services
+                      </a>
+                  </li>
+                -->
+                  <li class="nav__item">
+                      <a href="#projects" class="nav__link">
+                          <i class="ri-image-line"></i> Projects
+                      </a>
+                  </li>
+
+                  <li class="nav__item">
+                      <a href="#contact" class="nav__link">
+                          <i class="ri-chat-3-line"></i> Contact
+                      </a>
+                  </li>
+              </ul>
+
+              <!-- Close button -->
+              <div class="nav__close" id="nav-close">
+                  <i class="ri-close-line"></i>
+              </div>
+          </div>
+
+          <div class="nav__buttons">
+              <!-- Theme change button -->
+              <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+              <!-- Toggle button -->
+              <div class="nav__toggle" id="nav-toggle">
+                  <i class="ri-menu-4-line"></i>
+              </div>
+          </div>
+      </nav>
+      
+      </section>
+
+      <section class="element">
+        <h3>Home / About</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.home</p>
+        <p>.home__container</p>
+
+
+        <h4>Sample code:</h4>
+        <code>
+
+            &lt;section class="home section" id="home"&gt;<br>
+            &lt;div class="home__container container grid section__border"&gt;<br>
+            &lt;div class="home__data grid"&gt;<br>
+            &lt;h1 class="home__title"&gt;<br>
+                            Hi, I’m Miji Kim <br>
+                            Frontend Developer <br>
+                            UI/UX Designer <br>
+                            &lt;/h1&gt;<br>
+                            &lt;div class="home__social"&gt;<br>
+                            &lt;a href="https://www.linkedin.com/in/mijikim0105" target="_blank" class="home__social-link"&gt;<br>
+                            &lt;i class="ri-linkedin-box-line">&lt;/i&gt;<br>
+                            &lt;/a>&gt;<br>
+    
+                            &lt;a href="https://github.com/iimiji" target="_blank" class="home__social-link"&gt;<br>
+                            &lt;i class="ri-github-line">&lt;/i&gt;<br>
+                            &lt;/a&gt;<br>
+    
+                            &lt;a href="https://www.youtube.com/@galleryme2147" target="_blank" class="home__social-link"&gt;<br>
+                            &lt;i class="ri-youtube-line"&gt;<br>&lt;/i&gt;<br>
+                            &lt;/a&gt;<br>
+    
+                            &lt;a href="https://drive.google.com/drive/u/0/folders/1HiOxrfiWZSnz7Uhui4wfj7Bo7Zz8NDt2" target="_blank" class="home__social-link"&gt;<br>
+                            &lt;i class="ri-attachment-2">&lt;/i&gt;<br>
+                            &lt;/a&gt;<br>
+                            &lt;/div&gt;<br>
+                            &lt;/div&gt;<br>
+                            &lt;/div&gt;<br>
+                            &lt;/section&gt;<br>
+        
+        </code>
+
+        <h4>Rendered element:</h4>
+
+        <!--==================== HOME ====================-->
+        <section class="home section" id="home">
+            <div class="home__container container grid section__border">
+                <div class="home__data grid">
+                    <h1 class="home__title">
+                        Hi, I’m Miji Kim <br>
+                        Frontend Developer <br>
+                        UI/UX Designer <br>
+                    </h1>
+                    <div class="home__social">
+                        <a href="https://www.linkedin.com/in/mijikim0105" target="_blank" class="home__social-link">
+                            <i class="ri-linkedin-box-line"></i>
+                        </a>
+
+                        <a href="https://github.com/iimiji" target="_blank" class="home__social-link">
+                            <i class="ri-github-line"></i>
+                        </a>
+
+                        <a href="https://www.youtube.com/@galleryme2147" target="_blank" class="home__social-link">
+                            <i class="ri-youtube-line"></i>
+                        </a>
+
+                        <a href="https://drive.google.com/drive/u/0/folders/1HiOxrfiWZSnz7Uhui4wfj7Bo7Zz8NDt2" target="_blank" class="home__social-link">
+                            <i class="ri-attachment-2"></i>                            
+                        </a>
+                    </div>
+
+                    <div class="section__border">
+
+                    </div>
+                    
+                    <h2 class="section__title">About</h2>
+                    
+                    <div class="home__blob grid">
+                        
+                        <div class="home__profile">
+                            <img src="assets/img/profile3.png" alt="">
+                        </div>
+                        
+
+                        <!--<img src="assets/img/shape-wawes.svg" alt="" class="home__shape-wawes">
+                        <img src="assets/img/shape-circle.svg" alt="" class="home__shape-circle">-->
+                    </div>
+
+                        <a href="https://drive.google.com/drive/u/0/folders/1HiOxrfiWZSnz7Uhui4wfj7Bo7Zz8NDt2" target="_blank" class="resume__social-link">
+                            Download Resume <i class="ri-attachment-2"></i>                            
+                        </a>
+
+                    <!--<ul class="home__social">
+                        <a href="https://www.linkedin.com/" target="_blank" class="home__social-link">
+                            <i class="ri-linkedin-box-line"></i>
+                        </a>
+
+                        <a href="https://github.com/" target="_blank" class="home__social-link">
+                            <i class="ri-github-line"></i>
+                        </a>
+
+                        <a href="https://dribbble.com/" target="_blank" class="home__social-link">
+                            <i class="ri-dribbble-line"></i>
+                        </a>
+                    </ul>-->
+                </div>
+
+                <!--==================== HOME INFO 1 ====================-->
+                <div class="home__info">
+                    
+                    <div>
+                        <h3 class="home__info-title">
+                            BIOGRAPHY
+                        </h3>
+                        
+                        <p class="home__info-description">
+                            Hi, I'm Miji Kim, Frontend Developer.
+                            Passionate about designing beautiful web
+                            interfaces. 
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3 class="home__info-title">
+                            CONTACT
+                        </h3>
+
+                        <p class="home__info-description">
+                            Miji, Kim <br>
+                            mijik@sfu.ca <br>
+                            +1 778-779-5501 <br>
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3 class="home__info-title">
+                            SERVICES
+                        </h3>
+
+                        <p class="home__info-description">
+                            UI/UX Design <br>
+                            Frontend Developer <br>
+                        </p>
+                    </div>
+                </div>
+
+                <!--==================== HOME INFO 2 ====================-->
+                <div class="home__info">
+                    <div>
+                        <h3 class="home__info-title">
+                            AGE
+                        </h3>
+
+                        <p class="home__info-number">
+                            21+
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3 class="home__info-title">
+                            COMPLETED PROJECTS
+                        </h3>
+
+                        <p class="home__info-number">
+                            4+
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3 class="home__info-title">
+                            WORKED YEAR
+                        </h3>
+
+                        <p class="home__info-number">
+                            03+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+      </section>
+      <section class="element">
+        <h3>Skills</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.skills</p>
+        <p>.skills__container</p>
+        <p>.skills__content</p>
+        <p>.skills__title</p>
+        <p>.skills__subtitle</p>
+
+        <h4>Sample code:</h4>
+        <code>
+            
+            &lt;section class="skills section" id="skills"&gt;<br>
+            &lt;h2 class="section__title"&gt;<br>Skills&lt;/h2&gt;<br>
+            &lt;span class="section__subtitle"&gt;<br>My favorite skills&lt;/span&gt;<br>
+    
+            &lt;div class="skills__container container grid section__border"&gt;<br>
+            &lt;div class="skills__content"&gt;<br>
+            &lt;h3 class="skills__title"&gt;<br>
+            &lt;i class="ri-braces-line">&lt;/i&gt;<br> Frontend Developer
+            &lt;/h3&gt;<br>
+    
+            &lt;div class="skills__info"&gt;<br>
+            &lt;div class="skills__data"&gt;<br>
+            &lt;div class="skills__blob"&gt;<br>
+            &lt;img src="assets/img/html-1.svg" alt="skills image"&gt;<br>
+            &lt;/div&gt;<br>
+    
+            &lt;h3 class="skills__name"&gt;<br>HTML&lt;/h3&gt;<br>
+            &lt;span class="skills__subtitle"&gt;<br>Intermediate&lt;/span&gt;<br>
+            &lt;/div&gt;<br>
+            &lt;/div&gt;<br>
+            &lt;/div&gt;<br>
+            &lt;/div&gt;<br>
+            &lt;/section&gt;<br>
+            
+        </code>
+
+        <h4>Rendered element:</h4>
+
+        <!--==================== SKILLS ====================-->
+        <section class="skills section" id="skills">
+            <h2 class="section__title">Skills</h2>
+            <span class="section__subtitle">My favorite skills</span>
+
+            <div class="skills__container container grid section__border">
+                <!--==================== SKILLS 1 ====================-->
+                <div class="skills__content">
+                    <h3 class="skills__title">
+                        <i class="ri-braces-line"></i> Frontend Developer
+                    </h3>
+
+                    <div class="skills__info">
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="assets/img/html-1.svg" alt="skills image">
+                            </div>
+
+                            <h3 class="skills__name">HTML</h3>
+                            <span class="skills__subtitle">Intermediate</span>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="assets/img/css-3.svg" alt="skills image">
+                            </div>
+
+                            <h3 class="skills__name">CSS</h3>
+                            <span class="skills__subtitle">Advanced</span>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="assets/img/logo-javascript.svg" alt="skills image">
+                            </div>
+
+                            <h3 class="skills__name">JavaScript</h3>
+                            <span class="skills__subtitle">Intermediate</span>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="assets/img/react-2.svg" alt="skills image">
+                            </div>
+
+                            <h3 class="skills__name">React</h3>
+                            <span class="skills__subtitle">Basic</span>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="assets/img/git-icon.svg" alt="skills image">
+                            </div>
+
+                            <h3 class="skills__name">Git</h3>
+                            <span class="skills__subtitle">Intermediate</span>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="assets/img/java-icon.svg" alt="skills image">
+                            </div>
+
+                            <h3 class="skills__name">Java</h3>
+                            <span class="skills__subtitle">Intermediate</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!--==================== SKILLS 2 ====================-->
+                <div class="skills__content">
+                    <h3 class="skills__title">
+                        <i class="ri-pantone-line"></i> Web Designer
+                    </h3>
+
+                    <div class="skills__info">
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="assets/img/figma-1.svg" alt="skills image">
+                            </div>
+
+                            <h3 class="skills__name">Figma</h3>
+                            <span class="skills__subtitle">Advanced</span>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Adobe_Illustrator_CC_icon.svg" alt="skills image">
+                            </div>
+
+                            <h3 class="skills__name">Illustrator</h3>
+                            <span class="skills__subtitle">Basic</span>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="assets/img/adobe-photoshop-2.svg" alt="skills image">
+                            </div>
+
+                            <h3 class="skills__name">Photoshop</h3>
+                            <span class="skills__subtitle">Intermediate</span>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/4/40/Adobe_Premiere_Pro_CC_icon.svg" alt="skills image">
+                            </div>
+
+                            <h3 class="skills__name">Premiere Pro</h3>
+                            <span class="skills__subtitle">Basic</span>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="assets/img/maya-2017.svg" alt="skills image">
+                            </div>
+
+                            <h3 class="skills__name">Maya</h3>
+                            <span class="skills__subtitle">Intermediate</span>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Adobe_After_Effects_CC_icon.svg" alt="skills image">
+                            </div>
+
+                            <h3 class="skills__name">After Effects</h3>
+                            <span class="skills__subtitle">Basic</span>
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+        </section>
+      </section>
+
+
+      <section class="element">
+        <h3>Qualification</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.qualification</p>
+        <p>.qualification__title</p>
+        <p>.qualification__subtitle</p>
+        <p>.qualification__container</p>
+        <p>.qualification__content</p>
+
+        <h4>Sample code:</h4>
+        <code>
+            &lt;section class="qualification section" id="qualification"&gt;<br>
+            &lt;h2 class="section__title"&gt;<br>Qualification&lt;/h2&gt;<br>
+            &lt;span class="section__subtitle"&gt;<br>Experience & education&lt;/span&gt;<br>
+
+            &lt;div class="qualification__container container grid section__border"&gt;<br>
+            &lt;div class="qualification__content"&gt;<br>
+            &lt;h3 class="qualification__title"&gt;<br>
+            &lt;i class="ri-pencil-ruler-2-line"&gt;<br>&lt;/i&gt;<br> Education
+            &lt;/h3&gt;<br>
+
+            &lt;div class="qualification__info"&gt;<br>
+            &lt;div&gt;<br>
+            &lt;h3 class="qualification__name"&gt;<br>
+                                    Major In Interactive Art and Technology
+                                    &lt;/h3&gt;<br>
+                                    &lt;span class="qualification__country">Simon Fraser University&lt;/span&gt;<br>
+                                    &lt;span class="qualification__year">2021 - Current&lt;/span&gt;<br>
+                                    &lt;/div&gt;<br>
+                                    &lt;/div&gt;<br>
+                                    &lt;/div&gt;<br>
+                                    &lt;/div&gt;<br>
+                                    &lt;/section&gt;<br>
+                    
+        </code>
+
+        <h4>Rendered element:</h4>
+
+            <!--==================== QUALIFICATION ====================-->
+            <section class="qualification section" id="qualification">
+                <h2 class="section__title">Qualification</h2>
+                <span class="section__subtitle">Experience & education</span>
+
+                <div class="qualification__container container grid section__border">
+                    <!--==================== QUALIFICATION 1 ====================-->
+                    <div class="qualification__content">
+                        <h3 class="qualification__title">
+                            <i class="ri-pencil-ruler-2-line"></i> Education
+                        </h3>
+
+                        <div class="qualification__info">
+                            <div>
+                                <h3 class="qualification__name">
+                                    Major In Interactive Art and Technology
+                                </h3>
+                                <span class="qualification__country">Simon Fraser University</span>
+                                <span class="qualification__year">2021 - Current</span>
+                            </div>
+
+                            <div>
+                                <h3 class="qualification__name">
+                                    Major In Computing Science
+                                </h3>
+                                <span class="qualification__country">Simon Fraser University</span>
+                                <span class="qualification__year">2019 - 2021</span>
+                            </div>
+
+                            <div>
+                                <h3 class="qualification__name">
+                                    Minor In Computing Science
+                                </h3>
+                                <span class="qualification__country">Simon Fraser University</span>
+                                <span class="qualification__year">2021 - Current</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--==================== QUALIFICATION 2 ====================-->
+                    <div class="qualification__content">
+                        <h3 class="qualification__title">
+                            <i class="ri-building-line"></i> Work
+                        </h3>
+
+                        <div class="qualification__info">
+                            <div>
+                                <h3 class="qualification__name">
+                                    Graphic Designer
+                                </h3>
+                                <span class="qualification__country">Adobe - Photoshop / Illustration </span>
+                                <span class="qualification__year">2021</span>
+                            </div>
+
+                            <div>
+                                <h3 class="qualification__name">
+                                    Medical Clinic Assistant
+                                </h3>
+                                <span class="qualification__country">Microsoft - Perú</span>
+                                <span class="qualification__year">2018 - 2020</span>
+                            </div>
+
+                            <div>
+                                <h3 class="qualification__name">
+                                    Medical Clinic Assistant
+                                </h3>
+                                <span class="qualification__country">Photoshop / Illustration </span>
+                                <span class="qualification__year">2020 - Present</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--==================== QUALIFICATION 3 ====================-->
+                    <div class="qualification__content">
+                        <h3 class="qualification__title">
+                            <i class="ri-pencil-ruler-2-line"></i> Awards
+                        </h3>
+
+                        <div class="qualification__info">
+                            <div>
+                                <h3 class="qualification__name">
+                                    The Dean's Honour Roll
+                                </h3>
+                                <span class="qualification__country">Simon Fraser University</span>
+                                <span class="qualification__year">Spring 2022</span>
+                            </div>
+
+                            <div>
+                                <h3 class="qualification__name">
+                                    Scholars Entrance Scholarship
+                                </h3>
+                                <span class="qualification__country">SFU Undergraduate</span>
+                                <span class="qualification__year">2019 - 2021</span>
+                            </div>
+
+                            <div>
+                                <h3 class="qualification__name">
+                                    Centennial Schlarship
+                                </h3>
+                                <span class="qualification__country">Rotary Club of Port Coquitlam </span>
+                                <span class="qualification__year">2021 - Current</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--==================== QUALIFICATION 4 ====================-->
+                    <div class="qualification__content">
+                        <h3 class="qualification__title">
+                            <i class="ri-building-line"></i> Certifications
+                        </h3>
+
+                        <div class="qualification__info">
+                            <div>
+                                <h3 class="qualification__name">
+                                    Software Education Instructor Certificate
+                                </h3>
+                                <span class="qualification__country">Korea Association of Vocational Education</span>
+                                <span class="qualification__year">2022</span>
+                            </div>
+
+                            <div>
+                                <h3 class="qualification__name">
+                                    Psychological Analyst Certificate
+                                </h3>
+                                <span class="qualification__country">Korea Association of Vocational Education</span>
+                                <span class="qualification__year">2022</span>
+                            </div>
+
+                            <div>
+                                <h3 class="qualification__name">
+                                    SNS Marketing Expert Certificate
+                                </h3>
+                                <span class="qualification__country">Korea Association of Vocational Education</span>
+                                <span class="qualification__year">2021</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <img src="assets/img/shape-circle.svg" alt="qualification image" class="qualification__img">
+            </section>
+
+
+
+
+      </section>
+
+
+<!--
+      <section class="element">
+        <h3>Product/Service Listing</h3>
+
+
+        <h4>CSS selector:</h4>
+        <p>.services</p>
+        <p>.services__title</p>
+        <p>.services__subtitle</p>
+        <p>.services__container</p>
+        <p>.services__content</p>
+
+
+        <h4>Sample code:</h4>
+        <code>
+                    
+            &lt;section class="services section" id="services"&gt;<br>
+            &lt;h2 class="section__title">Services&lt;/h2&gt;<br>
+            &lt;span class="section__subtitle"&gt;<br>What i offer&lt;/span&gt;<br>
+      
+            &lt;div class="services__container container grid section__border"&gt;<br>
+            &lt;div class="services__card"&gt;<br>
+            &lt;i class="ri-layout-4-line">&lt;/i&gt;<br>
+      
+            &lt;h2 class="services__title"&gt;<br>
+                            UI/UX <br>
+                            Designer
+                            &lt;/h2&gt;<br>
+      
+                            &lt;p class="services__description"&gt;<br>
+                            Service that provides the best quality and at 
+                            the request of the client, with professional 
+                            work and customer support.
+                            &lt;/p&gt;<br>
+                            &lt;div class="services__border">&lt;/div&gt;<br>
+                        &lt;/div&gt;<br>
+                    &lt;/div&gt;<br>
+                &lt;/section&gt;<br>
+        
+        </code>
+
+        <h4>Rendered element:</h4>
+    -->
+
+        <!--==================== SERVICES ====================-->
+        <!--
+        <section class="services section" id="services">
+          <h2 class="section__title">Services</h2>
+          <span class="section__subtitle">What i offer</span>
+
+          <div class="services__container container grid section__border">
+              <div class="services__card">
+                  <i class="ri-layout-4-line"></i>
+
+                  <h2 class="services__title">
+                      UI/UX <br>
+                      Designer
+                  </h2>
+
+                  <p class="services__description">
+                      Service that provides the best quality and at 
+                      the request of the client, with professional 
+                      work and customer support.
+                  </p>
+                  <div class="services__border"></div>
+              </div>
+
+              <div class="services__card">
+                  <i class="ri-code-line"></i>
+
+                  <h2 class="services__title">
+                      Website <br>
+                      Design
+                  </h2>
+
+                  <p class="services__description">
+                      Service that provides the best quality and at 
+                      the request of the client, with professional 
+                      work and customer support.
+                  </p>
+                  <div class="services__border"></div>
+              </div>
+              <div class="services__card">
+                <i class="ri-quill-pen-line"></i>
+
+                <h2 class="services__title">
+                    Website <br>
+                    Developer
+                </h2>
+
+                <p class="services__description">
+                    Service that provides the best quality and at 
+                    the request of the client, with professional 
+                    work and customer support.
+                </p>
+                <div class="services__border"></div>
+            </div>
+          </div>
+      </section>
+
+      
+      </section>
+    -->
+      <section class="element">
+        <h3>Project</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.projects</p>
+        <p>.projects__title</p>
+        <p>.projects__subtitle</p>
+        <p>.projects__container</p>
+        <p>.projects__content</p>
+
+        <h4>Sample code:</h4>
+        <code>
+                    
+            &lt;section class="projects section" id="projects"&gt;<br>
+            &lt;h2 class="section__title"&gt;<br>Projects&lt;/h2&gt;<br>
+            &lt;span class="section__subtitle"&gt;<br>Most recent work&lt;/span&gt;<br>
+        
+            &lt;div class="container section__border"&gt;<br>
+            &lt;div class="projects__container swiper"&gt;<br>
+            &lt;div class="swiper-wrapper"&gt;<br>
+            &lt;div class="projects__content swiper-slide"&gt;<br>
+            &lt;img src="assets/img/project1.jpg" alt="projects image" class="projects__img"&gt;<br>
+        
+            &lt;div&gt;<br>
+            &lt;span class="projects__subtitle">UI/UX Design&lt;/span&gt;<br>
+            &lt;h1 class="projects__title"&gt;<br>ROOTS&lt;/h1&gt;<br>
+            &lt;a href="#" class="projects__button"&gt;<br>
+                                        View demo &lt;i class="ri-arrow-right-line">&lt;/i&gt;<br>
+                                        &lt;/a&gt;<br>
+                                        &lt;/div&gt;<br>
+                                        &lt;/div&gt;<br>
+                            &lt;div&gt;<br>
+        
+                        &lt;div class="swiper-pagination"&gt;<br>&lt;/div&gt;<br>
+                        &lt;/div&gt;<br>
+                        &lt;/div&gt;<br>
+                        &lt;/section&gt;<br>
+        
+        </code>
+
+        <h4>Rendered element:</h4>
+
+
+       <!--==================== PROJECTS ====================-->
+       <section class="projects section" id="projects">
+        <h2 class="section__title">Projects</h2>
+        <span class="section__subtitle">Most recent work</span>
+
+        <div class="container section__border">
+            <div class="projects__container swiper">
+                <div class="swiper-wrapper">
+                    <!--==================== PROJECT 1 ====================-->
+                    <div class="projects__content swiper-slide">
+                        <img src="assets/img/project1.jpg" alt="projects image" class="projects__img">
+
+                        <div>
+                            <span class="projects__subtitle">UI/UX Design</span>
+                            <h1 class="projects__title">ROOTS</h1>
+                            <a href="#" class="projects__button">
+                                View demo <i class="ri-arrow-right-line"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Swiper pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+    </section>
+
+      <section class="element">
+        <h3>Contact</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.contact</p>
+        <p>.contact__container</p>
+        <p>.contact__content</p>
+        <p>.contact__title</p>
+        <p>.contact__info</p>
+        <p>.contact__data</p>
+
+        <h4>Sample code:</h4>
+        <code>
+            
+            &lt;section class="contact section" id="contact"&gt;<br>
+            &lt;h2 class="section__title"&gt;<br>Contact Me&lt;/h2&gt;<br>
+            &lt;span class="section__subtitle">Get in touch&lt;/span&gt;<br>
+    
+            &lt;div class="contact__container container grid section__border"&gt;<br>
+            &lt;div class="contact__content"&gt;<br>
+            &lt;h3 class="contact__title"&gt;<br>
+            &lt;i class="ri-chat-3-line"&gt;<br>&lt;/i&gt;<br> Talk to me
+            &lt;/h3&gt;<br>
+    
+            &lt;div class="contact__info"&gt;<br>
+            &lt;div class="contact__data"&gt;<br>
+            &lt;span class="contact__data-title"&gt;<br>Email&lt;/span&gt;<br>
+            &lt;span class="contact__data-info"&gt;<br>mijik@sfu.ca&lt;/span&gt;<br>
+            &lt;a href="mailto:mijik@sfu.ca" class="contact__button"&gt;<br>
+                                    Write me &lt;i class="ri-arrow-right-line">&lt;/i&gt;<br>
+                                    &lt;/a&gt;<br>
+                                    &lt;/div&gt;<br>
+                                    &lt;/div&gt;<br>
+                        &lt;/div&gt;<br>
+                    &lt;/div&gt;<br>
+                &lt;/section&gt;<br>
+        
+        </code>
+
+        <h4>Rendered element:</h4>
+
+        <!--==================== CONTACT ====================-->
+        <section class="contact section" id="contact">
+            <h2 class="section__title">Contact Me</h2>
+            <span class="section__subtitle">Get in touch</span>
+
+            <div class="contact__container container grid section__border">
+                <div class="contact__content">
+                    <h3 class="contact__title">
+                        <i class="ri-chat-3-line"></i> Talk to me
+                    </h3>
+
+                    <div class="contact__info">
+                        <div class="contact__data">
+                            <span class="contact__data-title">Email</span>
+                            <span class="contact__data-info">mijik@sfu.ca</span>
+                            <a href="mailto:mijik@sfu.ca" class="contact__button">
+                                Write me <i class="ri-arrow-right-line"></i>
+                            </a>
+                        </div>
+
+
+                        <div class="contact__data">
+                            <span class="contact__data-title">Message</span>
+                            <span class="contact__data-info">+778 779 5501</span>
+                            <a href="tel:+17787795501" class="contact__button">
+                                Write me <i class="ri-arrow-right-line"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact__content">
+                    <h3 class="contact__title">
+                        <i class="ri-send-plane-line"></i> Write me your project
+                    </h3>
+
+                    <form action="contact" class="contact__form" id="contact-form">
+                        <div class="contact__form-div">
+                            <label class="contact__form-tag">Names</label>
+                            <input type="text" name="user_name" required placeholder="Write your names" class="contact__form-input" id="contact-name">
+                        </div>
+
+                        <div class="contact__form-div">
+                            <label class="contact__form-tag">Mail</label>
+                            <input type="email" name="user_email" required placeholder="Write your email" class="contact__form-input" id="contact-email">
+                        </div>
+
+                        <div class="contact__form-div contact__form-area">
+                            <label class="contact__form-tag">Project</label>
+                            <textarea name="user_project" placeholder="Write your project" class="contact__form-input" id="contact-project"></textarea>
+                        </div>
+
+                        <p class="contact__message" id="contact-message"></p>
+
+                        <button type="submit" class="contact__button">
+                            Submit <i class="ri-arrow-right-up-line"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+
+
+      </section>
+
+    </section>
+    <!-- // COMBINED ELEMENTS SECTION -->
+
+
+
+    <section id="citations">
+      <h2>Citations</h2>
+
+      <ul>
+        https://www.youtube.com/watch?v=mpikdUftcxU&t=3s<br>
+        https://www.youtube.com/watch?v=xV7S8BhIeBo<br>
+        https://www.youtube.com/watch?v=3aCoZudPEKE&t=550s<br>
+        https://www.youtube.com/watch?v=0YFrGy_mzjY&t=29s<br>
+        https://www.youtube.com/watch?v=5-_2z-DdWng&t=212s<br>
+        https://www.youtube.com/watch?v=DmiVBbNLzo8<br>
+        https://upload.wikimedia.org/wikipedia/commons/4/40/Adobe_Premiere_Pro_CC_icon.svg<br>
+        https://upload.wikimedia.org/wikipedia/commons/c/cb/Adobe_After_Effects_CC_icon.svg<br>
+        https://upload.wikimedia.org/wikipedia/commons/f/fb/Adobe_Illustrator_CC_icon.svg<br>
+        https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css<br>
+        assets/img/favicon.png<br>
+        https://scrollrevealjs.org<br>
+        https://swiperjs.com<br>
+        https://www.w3schools.com/howto/howto_website_create_portfolio.asp<br>
+        https://www.freecodecamp.org/news/how-to-create-a-portfolio-website-using-html-css-javascript-and-bootstrap/<br>
+        https://www.geeksforgeeks.org/how-to-create-a-portfolio-gallery-using-html-and-css/<br>
+        https://dev.to/codewell/6-html-and-css-projects-for-your-portfolio-3kbh<br>
+        https://www.w3schools.com/css/css3_transitions.asp<br>
+        https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions<br>
+        https://css-tricks.com/almanac/properties/t/transition/<br>
+      </ul>
+
+    </section>
+
+
+
+  </body>
+</html>
