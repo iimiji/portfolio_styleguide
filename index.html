@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
   <head>
 
@@ -13,8 +13,6 @@
      <!--=============== REMIXICONS ===============-->
      <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
      
-     <!--=============== SWIPER CSS ===============-->
-     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
 
 
   </head>
@@ -26,39 +24,37 @@
             Style Guide of Miji's Portfolio
         </h1>
       <nav class="nav">
-          <a href="#" class="nav__logo">
-              Miji
-          </a>
+        <a href="#" class="nav__logo">
+            <img src="assets/img/logo.png" alt="logo">
+        </a>
 
           <div class="nav__menu">
               <ul class="nav__list grid">
+                <li class="nav__item">
+                    <a href="#design_style" class="nav__link">
+                        <i class="ri-home-5-line"></i> Design Style
+                    </a>
+                </li>
                   <li class="nav__item">
-                      <a href="#home" class="nav__link active-link">
-                          <i class="ri-home-5-line"></i> Home
+                      <a href="#interactive_elements" class="nav__link">
+                          <i class="ri-home-5-line"></i> Interactive Element
                       </a>
                   </li>
 
                   <li class="nav__item">
-                      <a href="#skills" class="nav__link">
-                          <i class="ri-trophy-line"></i> Skills
+                      <a href="#text_elements" class="nav__link">
+                          <i class="ri-book-open-line"></i> Text Elements
                       </a>
                   </li>
 
                   <li class="nav__item">
-                      <a href="#qualification" class="nav__link">
-                          <i class="ri-book-open-line"></i> Qualification
+                    <a href="#combined_elements" class="nav__link">
+                        <i class="ri-image-line"></i> Combined Elements
                       </a>
                   </li>
-
                   <li class="nav__item">
-                      <a href="#projects" class="nav__link">
-                          <i class="ri-image-line"></i> Projects
-                      </a>
-                  </li>
-
-                  <li class="nav__item">
-                      <a href="#contact" class="nav__link">
-                          <i class="ri-chat-3-line"></i> Contact
+                    <a href="../index.html" class="nav__link active-link">
+                        <i class="ri-image-line"></i> Back to Portfolio
                       </a>
                   </li>
               </ul>
@@ -70,9 +66,6 @@
           </div>
 
           <div class="nav__buttons">
-              <!-- Theme change button -->
-              <i class="ri-moon-line change-theme"></i>
-
               <!-- Toggle button -->
               <div class="nav__toggle">
                   <i class="ri-menu-4-line"></i>
@@ -80,8 +73,27 @@
           </div>
       </nav>
   </header>
+<br><br>
 
+  <section id="design_style">
+    <h2>Design style</h2>
 
+    <section class="element">
+        <h3>Color Palette</h3>
+
+        <img src="assets/img/colorPalette.jpg" alt="color__palette" class="color__palette">
+    </section>
+
+    <section class="element font__style">
+        <h3>Font Style</h3>
+
+        <p class="bodyfont__guide">body-font: 'Roboto'</p>
+        <p class="bodyfont__guide">body-size: .938rem</p>
+        <p class="titlefont__guide">title-font: 'Lora'</p>
+        <p class="titlefont__guide">title-size: 1rem</p>
+
+    </section>
+  </section>
 
     <!-- INTERACTIVE ELEMENTS SECTION // -->
     <section id="interactive_elements">
@@ -162,6 +174,28 @@
 
       </section>
 
+      <section class="element">
+        <h3>Project image / Hover</h3>
+        <h4>CSS selector:</h4>
+        <p>img</p>
+        <p>.projects__img</p>
+
+        <h4>Sample code:</h4>
+        <code>
+
+            &lt;img src="assets/img/project1.jpg" alt="projects image" class="projects__img"&gt;<br>
+        
+        </code>
+
+        <h4>Rendered element:</h4>
+
+
+        <img src="assets/img/project1.jpg" alt="projects image" class="projects__img">
+
+
+
+      </section>
+
 
       <section class="element">
         <h3>Text Input Field with Label</h3>
@@ -188,7 +222,185 @@
 
       </section>
 
+      <section class="element">
+        <h3>Skills</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.skills__data</p>
+        <p>.skills__blob</p>
+        <p>.skills__name</p>
+        <p>.skills__subtitle</p>
+
+        <h4>Sample code:</h4>
+        <code>
+        
+            &lt;div class="skills__data"&gt;<br>
+            &lt;div class="skills__blob"&gt;<br>
+            &lt;img src="assets/img/css-3.svg" alt="skills image"&gt;<br>
+            &lt;/div&gt;<br>
+    
+            &lt;h3 class="skills__name">CSS&lt;/h3&gt;<br>
+            &lt;span class="skills__subtitle"&gt;<br>Advanced&lt;/span&gt;<br>
+            &lt;/div&gt;<br>
+        </code>
+
+        <h4>Rendered element:</h4>
+
+        <div class="skills__data">
+            <div class="skills__blob">
+                <img src="assets/img/css-3.svg" alt="skills image">
+            </div>
+
+            <h3 class="skills__name">CSS</h3>
+            <span class="skills__subtitle">Advanced</span>
+        </div>
+
+      </section>
+
     </section>
+
+    <section class="element">
+        <h3>Home Blob</h3>
+        <h4>CSS selector:</h4>
+        <p>.home__blob</p>
+        <p>.home__profile</p>
+        <p>.grid</p>
+
+        <h4>Sample code:</h4>
+        <code>
+
+
+            &lt;div class="home__blob grid"&gt;<br>
+                        
+            &lt;div class="home__profile"&gt;<br>
+            &lt;img src="assets/img/profile3.png" alt=""&gt;<br>
+            &lt;/div&gt;<br>
+        
+            &lt;/div&gt;<br>
+
+
+            &lt;button type="submit" class="submit__button2"&gt;<br>
+                Submit &lt;i class="ri-arrow-right-up-line"&gt;<br>
+                &lt;/i&gt;<br>
+                &lt;/button&gt;<br>
+        
+        </code>
+
+        <h4>Rendered element:</h4>
+
+
+        <div class="home__blob grid">
+                        
+            <div class="home__profile">
+                <img src="assets/img/profile3.png" alt="">
+            </div>
+    
+        </div>
+
+    </section>
+
+      <section class="element">
+        <h3>Home Social Icon</h3>
+        <h4>CSS selector:</h4>
+        <p>.home__social</p>
+
+        <h4>Sample code:</h4>
+        <code>
+
+            &lt;div class="home__social"&gt;<br>
+                            &lt;a href="https://www.linkedin.com/in/mijikim0105" target="_blank" class="home__social-link"&gt;<br>
+                            &lt;i class="ri-linkedin-box-line">&lt;/i&gt;<br>
+                            &lt;/a>&gt;<br>
+                            &lt;/div&gt;<br>
+        </code>
+
+        <h4>Rendered element:</h4>
+
+
+        <div class="home__social">
+            <a href="https://www.linkedin.com/in/mijikim0105" target="_blank" class="home__social-link">
+                <i class="ri-linkedin-box-line"></i>
+            </a>
+        </div>
+
+
+      </section>
+
+      <section class="element">
+        <h3>Footer Social Icon</h3>
+        <h4>CSS selector:</h4>
+        <p>.footer__social</p>
+
+        <h4>Sample code:</h4>
+        <code>
+
+            &lt;div class="footer__social"&gt;<br>
+            &lt;a href="https://www.linkedin.com/in/mijikim0105" target="_blank" class="footer__social-link"&gt;<br>
+            &lt;i class="ri-linkedin-box-line"&gt;<br>
+
+            &lt;/i&gt;<br>
+            &lt;/a&gt;<br>
+            &lt;/div&gt;<br>
+        
+        </code>
+
+        <h4>Rendered element:</h4>
+
+
+        <div class="footer__social">
+            <a href="https://www.linkedin.com/in/mijikim0105" target="_blank" class="footer__social-link">
+                <i class="ri-linkedin-box-line"></i>
+            </a>
+        </div>
+
+
+      </section>
+
+      <section class="element">
+        <h3>Footer Link List</h3>
+        <h4>CSS selector:</h4>
+        <p>.footer__list</p>
+
+        <h4>Sample code:</h4>
+        <code>
+            &lt;ul class="footer__list"&gt;<br>
+            &lt;li&gt;<br>
+            &lt;a href="#home" class="footer__link"&gt;<br>
+            Home
+            &lt;/ul&gt;<br>
+        </code>
+
+        <h4>Rendered element:</h4>
+
+        <ul class="footer__list">
+            <li>
+                <a href="#home" class="footer__link">Home</a>
+            </li>
+        </ul>
+
+
+      </section>
+
+      <section class="element">
+        <h3>Scroll Down Icon</h3>
+        <h4>CSS selector:</h4>
+        <p>.spinner</p>
+        <p>.scroll-down</p>
+
+        <h4>Sample code:</h4>
+        <code>
+            &lt;div class="spinner scroll-down"&gt;<br> 
+            &lt;a class="animate"&gt;<br>
+
+            &lt;/a&gt;<br>
+            &lt;/div&gt;<br>
+        </code>
+
+        <h4>Rendered element:</h4>
+
+        <div class="spinner scroll-down"> <a class="animate"></a> </div>
+      </section>
+
     <!-- // INTERACTIVE ELEMENTS SECTION -->
 
 
@@ -241,6 +453,29 @@
             For the uniformity of the design, it would be helpful to have a detailed style guide at the beginning of the UI/UX project.</p>
             <br><p><i>4. How would you explain them to our audiences?</i><br>
             It was a project I could create about a design that uses Figma and proto-pie and improves the user experience.</p>
+      </section>
+      <section class="element">
+        <h3>Project 1 - ROOT</h3>
+        <p>
+            ROOT is a family social communicating application that allows users to engage, connect, and share updates or news with their families abroad. Designed for easier accessibility for seniors. ROOT was a mobile application project from one of my classes, IAT 334: Interface Design, at Simon Fraser University.
+        </p>
+      </section>
+      <section class="element">
+        <h3>Project 2 - SNAP</h3>
+        <p>
+            Our group was tasked to redesign the interface for the dining feature in the SFU Snap app that allows its users to find information about dining on SFU campus. This was a mobile application project from one of my classes, CMPT 363: User Interface Design, at Simon Fraser University. During this project, I was in charge of user research, developing new features, and re-designing and prototyping via Figma.        </p>
+      </section>
+      <section class="element">
+        <h3>Project 3 - TROS</h3>
+        <p>
+            Sorry, Under Construction 
+        </p>
+      </section>
+      <section class="element">
+        <h3>Project 4 - Soundcloud</h3>
+        <p>
+            Sorry, Under Construction 
+        </p>
       </section>
 
     </section>
@@ -390,7 +625,6 @@
                             &lt;/div&gt;<br>
                             &lt;/div&gt;<br>
                             &lt;/section&gt;<br>
-        
         </code>
 
         <h4>Rendered element:</h4>
@@ -421,6 +655,7 @@
                             <i class="ri-attachment-2"></i>                            
                         </a>
                     </div>
+                    <div class="spinner scroll-down"> <a class="animate"></a> </div>
 
                     <div class="section__border">
 
@@ -434,9 +669,6 @@
                             <img src="assets/img/profile3.png" alt="">
                         </div>
                         
-
-                        <!--<img src="assets/img/shape-wawes.svg" alt="" class="home__shape-wawes">
-                        <img src="assets/img/shape-circle.svg" alt="" class="home__shape-circle">-->
                     </div>
 
                         <a href="https://drive.google.com/drive/u/0/folders/1HiOxrfiWZSnz7Uhui4wfj7Bo7Zz8NDt2" target="_blank" class="resume__social-link">
@@ -467,9 +699,8 @@
                         </h3>
                         
                         <p class="home__info-description">
-                            Hi, I'm Miji Kim, Frontend Developer.
-                            Passionate about designing beautiful web
-                            interfaces. 
+                            I’m Miji Kim, a User-Centered UI / UX Designer & Frontend Developer with international experience in emerging technology development. 
+
                         </p>
                     </div>
 
@@ -583,7 +814,7 @@
                 <!--==================== SKILLS 1 ====================-->
                 <div class="skills__content">
                     <h3 class="skills__title">
-                        <i class="ri-braces-line"></i> Frontend Developer
+                        <i class="ri-braces-line"></i> Developing Skills
                     </h3>
 
                     <div class="skills__info">
@@ -646,7 +877,7 @@
                 <!--==================== SKILLS 2 ====================-->
                 <div class="skills__content">
                     <h3 class="skills__title">
-                        <i class="ri-pantone-line"></i> Web Designer
+                        <i class="ri-pantone-line"></i> Designing Skills
                     </h3>
 
                     <div class="skills__info">
@@ -781,7 +1012,7 @@
 
                             <div>
                                 <h3 class="qualification__name">
-                                    Minor In Computing Science
+                                    Major-Minor In Computing Science
                                 </h3>
                                 <span class="qualification__country">Simon Fraser University</span>
                                 <span class="qualification__year">2021 - Current</span>
@@ -821,74 +1052,9 @@
                             </div>
                         </div>
                     </div>
-                    <!--==================== QUALIFICATION 3 ====================-->
-                    <div class="qualification__content">
-                        <h3 class="qualification__title">
-                            <i class="ri-pencil-ruler-2-line"></i> Awards
-                        </h3>
-
-                        <div class="qualification__info">
-                            <div>
-                                <h3 class="qualification__name">
-                                    The Dean's Honour Roll
-                                </h3>
-                                <span class="qualification__country">Simon Fraser University</span>
-                                <span class="qualification__year">Spring 2022</span>
-                            </div>
-
-                            <div>
-                                <h3 class="qualification__name">
-                                    Scholars Entrance Scholarship
-                                </h3>
-                                <span class="qualification__country">SFU Undergraduate</span>
-                                <span class="qualification__year">2019 - 2021</span>
-                            </div>
-
-                            <div>
-                                <h3 class="qualification__name">
-                                    Centennial Schlarship
-                                </h3>
-                                <span class="qualification__country">Rotary Club of Port Coquitlam </span>
-                                <span class="qualification__year">2021 - Current</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--==================== QUALIFICATION 4 ====================-->
-                    <div class="qualification__content">
-                        <h3 class="qualification__title">
-                            <i class="ri-building-line"></i> Certifications
-                        </h3>
-
-                        <div class="qualification__info">
-                            <div>
-                                <h3 class="qualification__name">
-                                    Software Education Instructor Certificate
-                                </h3>
-                                <span class="qualification__country">Korea Association of Vocational Education</span>
-                                <span class="qualification__year">2022</span>
-                            </div>
-
-                            <div>
-                                <h3 class="qualification__name">
-                                    Psychological Analyst Certificate
-                                </h3>
-                                <span class="qualification__country">Korea Association of Vocational Education</span>
-                                <span class="qualification__year">2022</span>
-                            </div>
-
-                            <div>
-                                <h3 class="qualification__name">
-                                    SNS Marketing Expert Certificate
-                                </h3>
-                                <span class="qualification__country">Korea Association of Vocational Education</span>
-                                <span class="qualification__year">2021</span>
-                            </div>
-                        </div>
-                    </div>
+                    
                 </div>
 
-                <img src="assets/img/shape-circle.svg" alt="qualification image" class="qualification__img">
             </section>
 
 
@@ -1179,15 +1345,149 @@
 
       </section>
 
+      <section class="element">
+        <h3>Footer</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.footer</p>
+        <p>.footer__container</p>
+        <p>.container</p>
+        <p>.footer__title</p>
+        <p>.footer__list</p>
+
+        <h4>Sample code:</h4>
+        <code>
+            &lt;footer class="footer"&gt;<br>
+            &lt;div class="footer__container container"&gt;<br>
+            &lt;h1 class="footer__title"&gt;<br>
+            Miji
+            &lt;/h1&gt;<br>
+            &lt;p&gt;<br>
+            Frontend Developer
+            &lt;/p&gt;<br>
+            &lt;p&gt;<br>
+            UI/UX Designer
+
+            &lt;/p&gt;<br>
+
+            &lt;ul class="footer__list"&gt;<br>
+            &lt;li&gt;<br>
+            &lt;a href="#home" class="footer__link"&gt;<br>
+            Home
+
+            &lt;/a&gt;<br>
+            &lt;/li&gt;<br>
+            &lt;li&gt;<br>
+            &lt;a href="#skills" class="footer__link"&gt;<br>
+            Skills
+
+            &lt;/a&gt;<br>
+            &lt;/li&gt;<br>
+            &lt;li&gt;<br>
+            &lt;a href="#projects" class="footer__link"&gt;<br>
+            Projects
+
+            &lt;/a&gt;<br>
+            &lt;/li&gt;<br>
+            &lt;li&gt;<br>
+            &lt;a href="portfolio_styleguide/index.html" class="footer__link"&gt;<br>
+            Style Guide
+
+            &lt;/a&gt;<br>
+            &lt;/li&gt;<br>
+            &lt;/ul&gt;<br>
+
+            &lt;div class="footer__social"&gt;<br>
+            &lt;a href="https://www.linkedin.com/in/mijikim0105" target="_blank" class="footer__social-link"&gt;<br>
+            &lt;i class="ri-linkedin-box-line"&gt;<br>
+
+            &lt;/i&gt;<br>
+            &lt;/a&gt;<br>
+
+            &lt;a href="https://github.com/iimiji" target="_blank" class="footer__social-link"&gt;<br>
+            &lt;i class="ri-github-line"&gt;<br>
+
+            &lt;/i&gt;<br>
+            &lt;/a&gt;<br>
+
+            &lt;a href="https://www.youtube.com/@galleryme2147" target="_blank" class="footer__social-link"&gt;<br>
+            &lt;i class="ri-youtube-line"&gt;<br>
+
+            &lt;/i&gt;<br>
+            &lt;/a&gt;<br>
+            &lt;a href="https://drive.google.com/drive/u/0/folders/1HiOxrfiWZSnz7Uhui4wfj7Bo7Zz8NDt2" target="_blank" class="footer__social-link"&gt;<br>
+            &lt;i class="ri-attachment-2"&gt;<br>
+
+            &lt;/i&gt;<br>                     
+            &lt;/a&gt;<br>
+            &lt;/div&gt;<br>
+
+            &lt;span class="footer__copy"&gt;<br>
+                        &#169; Copyright Miji Kim. All rights reserved
+                        &lt;/span&gt;<br>
+                        &lt;/div&gt;<br>
+                        &lt;/footer&gt;<br>
+
+            &lt;section class="contact section" id="contact"&gt;<br>
+
+        </code>
+
+        <h4>Rendered element: </h4>
+            <!--==================== FOOTER ====================-->
+            <footer class="footer section">
+                <div class="footer__container container">
+                    <h1 class="footer__title">Miji</h1>
+                    <p>Frontend Developer</p>
+                    <p>UI/UX Designer</p>
+
+                    <ul class="footer__list">
+                        <li>
+                            <a href="#home" class="footer__link">Home</a>
+                        </li>
+                        <li>
+                            <a href="#skills" class="footer__link">Skills</a>
+                        </li>
+                        <li>
+                            <a href="#projects" class="footer__link">Projects</a>
+                        </li>
+                        <li>
+                            <a href="portfolio_styleguide/index.html" class="footer__link">Style Guide</a>
+                        </li>
+                    </ul>
+
+                    <div class="footer__social">
+                        <a href="https://www.linkedin.com/in/mijikim0105" target="_blank" class="footer__social-link">
+                            <i class="ri-linkedin-box-line"></i>
+                        </a>
+
+                        <a href="https://github.com/iimiji" target="_blank" class="footer__social-link">
+                            <i class="ri-github-line"></i>
+                        </a>
+
+                        <a href="https://www.youtube.com/@galleryme2147" target="_blank" class="footer__social-link">
+                            <i class="ri-youtube-line"></i>
+                        </a>
+                        <a href="https://drive.google.com/drive/u/0/folders/1HiOxrfiWZSnz7Uhui4wfj7Bo7Zz8NDt2" target="_blank" class="footer__social-link">
+                            <i class="ri-attachment-2"></i>                            
+                        </a>
+                    </div>
+
+                    <span class="footer__copy">
+                        &#169; Copyright Miji Kim. All rights reserved
+                    </span>
+                </div>
+            </footer>
+      </section>
+
     </section>
     <!-- // COMBINED ELEMENTS SECTION -->
 
 
 
-    <section id="citations">
+    <section id="citations" class="element">
       <h2>Citations</h2>
 
-      <ul>
+      <p>
         https://www.youtube.com/watch?v=mpikdUftcxU&t=3s<br>
         https://www.youtube.com/watch?v=xV7S8BhIeBo<br>
         https://www.youtube.com/watch?v=3aCoZudPEKE&t=550s<br>
@@ -1208,7 +1508,8 @@
         https://www.w3schools.com/css/css3_transitions.asp<br>
         https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions<br>
         https://css-tricks.com/almanac/properties/t/transition/<br>
-      </ul>
+        https://codepen.io/dr_ph4nt0m/pen/VObmmK?html-preprocessor=pug<br>
+      </p>
 
     </section>
 
